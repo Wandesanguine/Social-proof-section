@@ -1,0 +1,163 @@
+
+:root{
+    
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+/*
+### Neutral
+*/
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    color:var(--White);
+
+}
+.container{
+    margin:30px auto;
+    max-width: 250px;
+}
+h1, .stars-p{
+    color:var(--Very-Dark-Magenta);
+    text-align: center;
+}
+h1+p{
+    color:var(--Very-Dark-Magenta);
+    text-align: center;
+    font-size: small;
+}
+.class2{
+    margin: 30px auto;
+}
+.stars{
+    margin-bottom:.5rem;
+}
+.man, .woman, .child{
+    background: var(--Light-Grayish-Magenta);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px auto;
+    padding:10px;
+}
+.people{
+    background: var(--Very-Dark-Magenta);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: .5rem;
+}
+.inwards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.status{
+    color:var(--Soft-Pink)
+}
+
+.inwards img{
+    border-radius: 100%;
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+
+@media (min-width:768px){
+    body{
+        text-align: none;
+    }
+    .container{
+        min-width: 750px;
+    }
+    .class1{
+        max-width: calc(750px/3);
+        padding-left: 0;
+    }
+    h1{
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    .media-1{
+        display: flex;
+        align-items: center;
+        max-height: 300px;
+    }
+    .class2{
+        margin-top: 40px;
+        max-height: 200px;
+        margin-bottom: 20px;
+    }
+    .star{
+        background:var(--White);
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .stars-p{
+        margin-left: 2rem;
+    }
+    .man, .woman, .child{
+        background: var(--Light-Grayish-Magenta);
+        display: flex;
+        flex-direction: row;
+    }
+    .woman{
+        margin-left: 100px;
+    }
+    .child{
+        margin-left: 150px;
+    }
+    h1+p{
+        line-height: 1.8;
+    }
+    .media2{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .class3{
+      max-height: 205px;
+    }
+    .class4{
+        height: 205px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .class5{
+        margin-top: 30px;
+    }
+    .people{
+        max-width: 235px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
